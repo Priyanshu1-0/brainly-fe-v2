@@ -13,6 +13,7 @@ function App() {
           <Route path="/signup" element={<Signup></Signup>}></Route>
           <Route path="/signin" element={<Signin></Signin>}></Route>
           <Route path="/dashboard" element={<Dashboard></Dashboard>}></Route>
+          {/* <Route path="/share/:shareId"></Route> */}
         </Routes>
       </BrowserRouter>
   )
