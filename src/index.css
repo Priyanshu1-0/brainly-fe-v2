@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.masonry-column {
+  background-clip: padding-box;
+}
+.masonry-column > div {
+  margin-bottom: 2rem; /* vertical gap between cards */
+}
+
