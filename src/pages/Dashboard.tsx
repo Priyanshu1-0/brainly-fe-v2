@@ -6,10 +6,11 @@ import { Button } from '../components/ui/Button'
 import { Card } from '../components/ui/Card'
 import { CreateContentModal } from '../components/ui/CreateContentModal'
 import { Sidebar } from '../components/ui/Sidebar'
+import { useContent } from '../hooks/useContent'
 function Dashboard() {
 
   const  [modalOpen, setModalOpen] = useState(false)
-
+  const contents = useContent();
   return (
     <div>
       <Sidebar></Sidebar>
@@ -24,8 +25,11 @@ function Dashboard() {
       }} startIcon={<PlusIcon size='lg'/>} variant='primary' text='Add content' size='md'></Button>
       </div>
       <div className='flex gap-4'>
-      <Card type='Twitter' link='https://x.com/NealGardner_/status/1944506840899096654' title='PSG vs Chelsea'></Card>
-      <Card type='Youtube' link='https://www.youtube.com/watch?v=vHua-t_8hrA' title='Leetcode'></Card>
+      
+      {contents.map(({type,link,title})=> <Card type={type} 
+      link={link}
+      title={title}></Card>)}
+    
       </div>
       </div>
     </div>
