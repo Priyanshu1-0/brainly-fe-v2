@@ -1,9 +1,11 @@
+
 import Dashboard from "./pages/Dashboard"
 import { Signup } from "./pages/Signup"
 import { Signin } from "./pages/Signin"
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom"
 import PublicBrain from "./pages/PublicBrain";
 import ProtectedRoute from "./pages/ProtectedRoute";
+import NotFound from "./pages/NotFound";
 
 function App() {
 
@@ -19,6 +21,7 @@ function App() {
             </ProtectedRoute>
           } />
           <Route path="/share/:shareId" element={<PublicBrain />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
   )
