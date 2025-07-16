@@ -11,7 +11,12 @@ import { motion, AnimatePresence } from "framer-motion"
         Twitter = "Twitter"
     }
 
-export const CreateContentModal = ({open, onClose}) =>{
+interface CreateContentModalProps {
+    open: boolean;
+    onClose: () => void;
+}
+
+export const CreateContentModal = ({open, onClose}: CreateContentModalProps) =>{
     const titleRef = useRef<HTMLInputElement>();
     const linkRef = useRef<HTMLInputElement>();
     const [type, setType] = useState(ContentType.Youtube)

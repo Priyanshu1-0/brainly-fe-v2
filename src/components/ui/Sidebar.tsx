@@ -1,7 +1,7 @@
 import { Twitter } from "../icons/Twitter"
 import { Youtube } from "../icons/Youtube"
 import { Sidebaritem } from "./Sidebaritem"
-import { Brain, Menu, X, Home, BookOpen, Settings, LogOut } from "lucide-react"
+import { Brain, Menu, X, Home, LogOut } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"

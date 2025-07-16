@@ -27,7 +27,7 @@ const variantStyles ={
 
 export const Button = (props: ButtonProps) => {
     return <button onClick={props.onClick} className={`${variantStyles[props.variant]} ${defaultStyles}
-    ${sizeStyles[props.size]} ${props.fullWidth ? " w-full flex justify-center items-center" : ""}
+    ${sizeStyles[props.size || "md"]} ${props.fullWidth ? " w-full flex justify-center items-center" : ""}
     ${props.loading? "opacity-45" : ""}`} disabled={props.loading}>
        {props.startIcon ? <div className="pr-2">{props.startIcon}</div> : null} {props.text} {props.endIcon}    
     </button>
