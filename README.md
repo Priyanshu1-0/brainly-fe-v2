@@ -2,6 +2,12 @@
 
 A modern web application for aggregating and sharing content from various social media platforms like Twitter and YouTube. Built with React, TypeScript, and Vite.
 
+## 🔗 Links
+
+- **Live Website**: [Live Website](https://brainly-fe-v2.vercel.app/)
+- **Backend Repository**: [Brainly Backend](https://github.com/Priyanshu1-0/brainly)
+
+
 ## 🖼️ Screenshots
 
 ### Authentication Pages
@@ -61,6 +67,7 @@ npm run dev
 ```
 
 4. Open your browser and navigate to `http://localhost:5173`
+
 
 ## 🛠️ Tech Stack
 
