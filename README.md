@@ -46,7 +46,7 @@ A modern web application for aggregating and sharing content from various social
 
 1. Clone the repository:
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Priyanshu1-0/brainly-fe-v2.git
 cd brainly-frontend
 ```
 
