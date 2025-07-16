@@ -46,7 +46,7 @@ function Dashboard() {
         "Authorization": localStorage.getItem("token")
       }
     })
-    setShareUrl(`http://localhost:5173/share/${response.data.link}`)
+    setShareUrl(`${window.location.origin}/share/${response.data.link}`)
     setShowShare(true)
   }
 
