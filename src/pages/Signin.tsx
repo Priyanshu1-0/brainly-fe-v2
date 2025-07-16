@@ -32,9 +32,13 @@ export const Signin = () => {
                 email,
                 password
             })
-            const jwt = response.data.token
-            localStorage.setItem("token", jwt)
-            navigate("/dashboard")
+            if (response.data.token) {
+                const jwt = response.data.token
+                localStorage.setItem("token", jwt)
+                navigate("/dashboard")
+            } else {
+                setError("Invalid email or password")
+            }
         } catch (err: any) {
             setError(err.response?.data?.message || "Invalid email or password")
         } finally {
