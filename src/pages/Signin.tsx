@@ -1,10 +1,9 @@
 import { useRef, useState } from "react"
-import { Button } from "../components/ui/Button"
 import { BACKEND_URL } from "../config"
 import axios from "axios"
 import { useNavigate } from "react-router-dom"
 import { motion } from "framer-motion"
-import { Brain, Eye, EyeOff, ArrowRight, LogIn } from "lucide-react"
+import { Brain, Eye, EyeOff, LogIn } from "lucide-react"
 
 export const Signin = () => {
     const emailRef = useRef<HTMLInputElement>(null)
